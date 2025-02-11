@@ -1,34 +1,36 @@
 {
   "expo": {
-    "name": "slotMobile",
-    "slug": "slotgames",
+    "name": "Spin Fiesta 777",
+    "slug": "spin-fiesta-777",
     "version": "1.0.0",
     "orientation": "default",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
       "supportsTablet": true,
       "requireFullScreen": true,
       "runtimeVersion": {
-        "policy": "appVersion"
-      }
+        "policy": "sdkVersion"
+      },
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "com.raja807.slotgames"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.raja807.slotgames",
-      "runtimeVersion": "1.0.0"
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      },
+      "permissions": [],
+      "versionCode": 1,
+      "softwareKeyboardLayoutMode": "pan"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/favicon.png"
     },
     "extra": {
       "eas": {
@@ -37,7 +39,21 @@
     },
     "owner": "raja807",
     "updates": {
-      "url": "https://u.expo.dev/b2f70dd4-447c-4939-bc97-034c2d7b9b69"
-    }
+      "url": "https://u.expo.dev/b2f70dd4-447c-4939-bc97-034c2d7b9b69",
+      "fallbackToCacheTimeout": 0
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff",
+          "image": "./assets/images/splash-icon-light.png",
+          "dark": {
+            "image": "./assets/images/splash-icon-dark.png",
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ]
   }
 }
