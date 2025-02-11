@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "slotMobile",
+    "slug": "slotgames",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "requireFullScreen": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.raja807.slotgames",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b2f70dd4-447c-4939-bc97-034c2d7b9b69"
+      }
+    },
+    "owner": "raja807",
+    "updates": {
+      "url": "https://u.expo.dev/b2f70dd4-447c-4939-bc97-034c2d7b9b69"
+    }
+  }
+}
