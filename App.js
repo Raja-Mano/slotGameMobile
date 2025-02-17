@@ -14,7 +14,7 @@ import { WebView } from 'react-native-webview';
 import * as ScreenOrientation from 'expo-screen-orientation';
 import * as NavigationBar from 'expo-navigation-bar';
 
-const WEB_URL = "https://stage.bougeegames.com";
+const WEB_URL = "https://stage.bougeegames.com/login";
 
 const App = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
