@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Spin Fiesta 777",
-    "slug": "spin-fiesta-777",
+    "slug": "slot-games",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/images/icon.png",
@@ -34,12 +34,12 @@
     },
     "extra": {
       "eas": {
-        "projectId": "b2f70dd4-447c-4939-bc97-034c2d7b9b69"
+        "projectId": "e1ac2156-3d76-47ca-80b1-4159177377bf"
       }
     },
-    "owner": "raja807",
+    "owner": "awone",
     "updates": {
-      "url": "https://u.expo.dev/b2f70dd4-447c-4939-bc97-034c2d7b9b69",
+      "url": "https://u.expo.dev/e1ac2156-3d76-47ca-80b1-4159177377bf",
       "fallbackToCacheTimeout": 0
     },
     "plugins": [
