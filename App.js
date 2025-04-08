@@ -130,23 +130,6 @@ const App = () => {
     }
   };
 
-  const handleOrientationChange = async (url) => {
-    try {
-      const isSlot = url.includes("slot-games") && !url.includes("china-street");
-      setIsSlotGame(isSlot);
-      
-      const targetOrientation = isSlot ? 
-        ScreenOrientation.OrientationLock.LANDSCAPE_LEFT : 
-        ScreenOrientation.OrientationLock.PORTRAIT_UP;
-
-      if (targetOrientation !== currentOrientation.current) {
-        await ScreenOrientation.lockAsync(targetOrientation);
-        currentOrientation.current = targetOrientation;
-      }
-    } catch (error) {
-      console.error('Orientation lock failed:', error);
-    }
-  };
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -200,8 +183,8 @@ const App = () => {
             originWhitelist={['*']}
             injectedJavaScript={injectedJavaScript}
             onMessage={handleMessage}
-            onNavigationStateChange={(navState) => handleOrientationChange(navState.url)}
-            onLoadStart={(event) => handleOrientationChange(event.nativeEvent.url)}
+            // onNavigationStateChange={(navState) => handleOrientationChange(navState.url)}
+            // onLoadStart={(event) => handleOrientationChange(event.nativeEvent.url)}
             onLoadEnd={() => webViewRef.current?.injectJavaScript(injectedJavaScript)}
             scalesPageToFit={true}
             scrollEnabled={false}
